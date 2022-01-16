@@ -1,0 +1,109 @@
+/* CSS Reset */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Global Styles */
+
+body {
+  font-size: 16px;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0px auto;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+button {
+  border: 0px;
+}
+
+.btn {
+  background-color: var(--brightRed);
+  font-size: 14px;
+  color: var(--verylightgray);
+  padding: 10px;
+  border-radius: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+  display: none;
+}
+/* 
+btn--alt {
+  background-color: var(--brightRed);
+  font-size: 14px;
+  color: var(--verylightgray);
+  padding: 10px;
+  border-radius: 50px;
+  text-decoration: none;
+  cursor: pointer;
+} */
+
+/* Variables */
+
+:root {
+  --brightRed: #f25f3a;
+
+  --darkBlue: #242d52;
+
+  --darkGrayishBlue: #9095a7;
+
+  --veryDarkBlue: hsl(233, 12%, 13%);
+
+  --veryPaleRed: #ffefeb;
+
+  --verylightgray: #fafafa;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 150px;
+}
+
+.header .container {
+  padding: 25px 0px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 0px;
+}
+
+.nav__links {
+  display: inline-block;
+}
+
+.nav__link {
+  display: inline-block;
+  margin: 0px 15px;
+  font-size: 14px;
+}
