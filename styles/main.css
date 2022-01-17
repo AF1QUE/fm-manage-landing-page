@@ -10,59 +10,6 @@ li {
   list-style-type: none;
 }
 
-/* Global Styles */
-
-body {
-  font-size: 16px;
-  font-family: "Be Vietnam Pro", sans-serif;
-}
-
-.container {
-  width: 1200px;
-  margin: 0px auto;
-}
-
-h1 {
-  font-size: 36px;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 26px;
-  font-weight: 700;
-}
-
-h3 {
-  font-size: 18px;
-  font-weight: 700;
-}
-
-button {
-  border: 0px;
-}
-
-.btn {
-  background-color: var(--brightRed);
-  font-size: 14px;
-  color: var(--verylightgray);
-  padding: 10px;
-  border-radius: 50px;
-  text-decoration: none;
-  cursor: pointer;
-  font-weight: 500;
-  display: none;
-}
-/* 
-btn--alt {
-  background-color: var(--brightRed);
-  font-size: 14px;
-  color: var(--verylightgray);
-  padding: 10px;
-  border-radius: 50px;
-  text-decoration: none;
-  cursor: pointer;
-} */
-
 /* Variables */
 
 :root {
@@ -79,12 +26,67 @@ btn--alt {
   --verylightgray: #fafafa;
 }
 
+/* Global Styles */
+
+body {
+  font-size: 16px;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.container {
+  width: 1140px;
+  margin: 0px auto;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--darkBlue);
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--darkBlue);
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--darkBlue);
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+
+  color: var(--darkGrayishBlue);
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--brightRed);
+  font-size: 13px;
+  color: var(--verylightgray);
+  padding: 15px 30px;
+  border-radius: 50px;
+
+  cursor: pointer;
+  font-weight: 500;
+}
+
 /* Header */
 
 .header {
   display: flex;
   align-items: center;
   height: 150px;
+  position: absolute;
+  width: 100%;
 }
 
 .header .container {
@@ -105,5 +107,33 @@ btn--alt {
 .nav__link {
   display: inline-block;
   margin: 0px 15px;
-  font-size: 14px;
+  font-size: 13px;
+  color: var(--darkBlue);
+  font-weight: 500;
+}
+
+.nav__logo {
+  margin-top: 10px;
+}
+
+/* Hero Styles */
+
+.hero {
+  background: url("/images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  background-position: 750px -175px;
+  height: 110vh;
+}
+
+.hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.hero__desc {
+  max-width: 350px;
+  margin: 30px 0px;
 }
