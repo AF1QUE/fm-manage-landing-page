@@ -14,10 +14,12 @@ li {
 
 :root {
   --brightRed: #f25f3a;
+  --brightRedHover: hsl(12, 68%, 59%);
 
   --darkBlue: #242d52;
 
   --darkGrayishBlue: #9095a7;
+  --darkGrayishBlueHover: hsl(227, 6%, 61%);
 
   --veryDarkBlue: hsl(233, 12%, 13%);
 
@@ -45,13 +47,13 @@ h1 {
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 36px;
   font-weight: 700;
   color: var(--darkBlue);
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--darkBlue);
 }
@@ -70,6 +72,18 @@ a {
 .btn {
   display: inline-block;
   background-color: var(--brightRed);
+  font-size: 13px;
+  color: var(--verylightgray);
+  padding: 15px 30px;
+  border-radius: 50px;
+
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn:hover {
+  display: inline-block;
+  background-color: var(--brightRedHover);
   font-size: 13px;
   color: var(--verylightgray);
   padding: 15px 30px;
@@ -137,4 +151,38 @@ a {
 .hero__desc {
   max-width: 350px;
   margin: 30px 0px;
+}
+
+/* Info Styles */
+
+.info .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info__content {
+  width: 50%;
+}
+
+.info__desc {
+  width: 375px;
+  margin: 30px 0px;
+}
+
+.info__services {
+  width: 50%;
+}
+
+.service {
+  display: flex;
+}
+
+.service__order {
+  height: inherit !important;
+  background-color: var(--brightRed);
+  padding: 15px;
+}
+
+.service__desc {
+  max-width: 450px;
 }
