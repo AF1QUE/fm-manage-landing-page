@@ -102,6 +102,7 @@ a {
 
 .nav__links {
   display: inline-block;
+  cursor: pointer;
 }
 
 .nav__link {
