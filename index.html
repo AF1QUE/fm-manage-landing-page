@@ -18,7 +18,6 @@
 
   <!-- External Styles & Script Files -->
   <link rel="stylesheet" href="styles/main.css">
-  <script src="/scripts/script.js"></script>
 
 
   <title>Frontend Mentor | Manage landing page</title>
@@ -111,36 +110,58 @@
       <div class="container">
         <div class="review__content">
           <h2 class="review__title">What they’ve said</h2>
-          <div class="testimonials">
-            <div class="testimonial">
-              <img src="images/avatar-anisha.png" alt="" class="testimonial__avatar">
-              <h3 class="testimonial__title">Anisha Li
-              </h3>
-              <p class="testimonial__desc">“Manage has supercharged our team’s workflow. The ability to maintain
-                visibility on larger milestones at all times keeps everyone motivated.”</p>
+          <div class="testimonials swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial">
+                  <img src="images/avatar-anisha.png" alt="" class="testimonial__avatar">
+                  <div class="testimonial__content">
+                    </h3>
+                    <p class="testimonial__desc">“Manage has supercharged our team’s workflow. The ability to maintain
+                      visibility on larger milestones at all times keeps everyone motivated.”</p>
+                    <h3 class="testimonial__title">Anisha Li
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial">
+                  <img src="images/avatar-ali.png" alt="" class="testimonial__avatar">
+                  <div class="testimonial__content">
+                    <h3 class="testimonial__title">Ali Bravo
+                    </h3>
+                    <p class="testimonial__desc">“We have been able to cancel so many other subscriptions since using
+                      Manage. There is no more cross-channel confusion and everyone is much
+                      more focused.”</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial">
+                  <img src="images/avatar-richard.png" alt="" class="testimonial__avatar">
+                  <div class="testimonial__content">
+                    <h3 class="testimonial__title">Richard Watts</h3>
+                    <p class="testimonial__desc">“Manage allows us to provide structure and process. It keeps us
+                      organized
+                      and focused. I can’t stop recommending them to everyone I talk to!”</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial">
+                  <img src="images/avatar-shanai.png" alt="" class="testimonial__avatar">
+                  <div class="testimonial__content">
+                    <h3 class="testimonial__title">Shanai Gough
+                    </h3>
+                    <p class="testimonial__desc">“Their software allows us to track, manage and collaborate on our
+                      projects
+                      from anywhere. It keeps the whole team in-sync without being intrusive.”
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="testimonial">
-              <img src="images/avatar-ali.png" alt="" class="testimonial__avatar">
-              <h3 class="testimonial__title">Ali Bravo
-              </h3>
-              <p class="testimonial__desc">“We have been able to cancel so many other subscriptions since using
-                Manage. There is no more cross-channel confusion and everyone is much
-                more focused.”</p>
-            </div>
-            <div class="testimonial">
-              <img src="images/avatar-richard.png" alt="" class="testimonial__avatar">
-              <h3 class="testimonial__title">Richard Watts</h3>
-              <p class="testimonial__desc">“Manage allows us to provide structure and process. It keeps us organized
-                and focused. I can’t stop recommending them to everyone I talk to!”</p>
-            </div>
-            <div class="testimonial">
-              <img src="images/avatar-shanai.png" alt="" class="testimonial__avatar">
-              <h3 class="testimonial__title">Shanai Gough
-              </h3>
-              <p class="testimonial__desc">“Their software allows us to track, manage and collaborate on our projects
-                from anywhere. It keeps the whole team in-sync without being intrusive.”
-              </p>
-            </div>
+            <div class="swiper-pagination"></div>
+
           </div>
           <a href="#" class="review__btn btn">Get Started</a>
         </div>
@@ -201,6 +222,8 @@
   </footer>
 
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="/scripts/script.js"></script>
+
 </body>
 
 </html>
