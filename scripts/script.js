@@ -14,6 +14,9 @@ var swiper = new Swiper(".swipers", {
     modifier: 0,
     slideShadows: true,
   },
+  autoplay: {
+    delay: 5000,
+  },
   loop: true,
 });
 
