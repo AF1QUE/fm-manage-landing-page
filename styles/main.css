@@ -358,12 +358,19 @@ a {
 }
 
 .social {
+  cursor: pointer;
   display: inline-block;
   color: var(--verylightgray);
   font-size: 22px;
 }
 
+.social:hover {
+  color: var(--brightRed);
+}
+
 .footer__links {
+  cursor: pointer;
+  height: inherit;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -373,12 +380,42 @@ a {
   color: var(--darkGrayishBlue);
 }
 
+.footer__link:hover {
+  color: var(--brightRed);
+}
+
 .columns > .column:nth-child(1) {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.columns > .column:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  align-items: flex-end;
+}
+
 .footer__logo {
   max-width: 146px;
+}
+
+/* +Footer Form Styles */
+
+.subscription {
+  display: flex;
+  justify-content: space-between;
+}
+
+#email {
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: none;
+  margin-right: 10px;
+}
+
+.submit__btn {
+  border: none;
 }
