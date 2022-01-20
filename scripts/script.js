@@ -1,3 +1,5 @@
+// SwiperJS
+
 var swiper = new Swiper(".swipers", {
   effect: "coverflow",
   grabCursor: true,
@@ -13,4 +15,12 @@ var swiper = new Swiper(".swipers", {
     slideShadows: true,
   },
   loop: true,
+});
+
+// Sticky header feature
+
+window.addEventListener("scroll", function () {
+  var header = document.querySelector(".header");
+  header.classList.toggle("sticky", window.scrollY > 0);
+  console.log("fired!!!");
 });

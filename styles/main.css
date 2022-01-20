@@ -113,6 +113,20 @@ a {
   height: 150px;
   position: absolute;
   width: 100%;
+
+  transition: all 0.8s ease;
+  z-index: 999;
+}
+
+.header.sticky {
+  transition: all 0.8s ease;
+  height: 75px;
+
+  background: rgb(255, 255, 255);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  position: fixed;
 }
 
 .header .container {
@@ -309,4 +323,22 @@ a {
 .c2a__title {
   color: var(--verylightgray);
   max-width: 350px;
+}
+
+/* Footer styles */
+
+.footer {
+  background: hsl(233, 12%, 13%);
+  height: 345px;
+}
+
+.footer .container {
+  height: inherit;
+}
+
+.columns {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
