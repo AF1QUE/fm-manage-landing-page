@@ -93,6 +93,18 @@ a {
   font-weight: 500;
 }
 
+.btn--alt {
+  display: inline-block;
+  background-color: var(--verylightgray);
+  font-size: 13px;
+  color: var(--brightRed);
+  padding: 15px 30px;
+  border-radius: 50px;
+
+  cursor: pointer;
+  font-weight: 500;
+}
+
 /* Header */
 
 .header {
@@ -262,4 +274,39 @@ a {
   height: 75px;
   margin-bottom: -40px;
   z-index: 2;
+}
+
+.review__c2a {
+  display: flex;
+  align-items: center;
+}
+
+.review__btn {
+  margin: 60px auto;
+}
+
+/* C2A Styles */
+
+.c2a {
+  background-image: url("/images/c2a-banner-bg.svg");
+  height: 245px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.c2a .container {
+  height: inherit;
+}
+
+.c2a__content {
+  display: flex;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c2a__title {
+  color: var(--verylightgray);
+  max-width: 350px;
 }
