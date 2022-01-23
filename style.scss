@@ -39,26 +39,26 @@ body {
 h1 {
   font-size: 50px;
   font-weight: 700;
-  color: var($darkBlue);
+  color: $darkBlue;
 }
 
 h2 {
   font-size: 36px;
   font-weight: 700;
-  color: var($darkBlue);
+  color: $darkBlue;
 }
 
 h3 {
   font-size: 16px;
   font-weight: 700;
-  color: var($darkBlue);
+  color: $darkBlue;
 }
 
 p {
   font-size: 16px;
   line-height: 26px;
 
-  color: var(darkGrayishBlue);
+  color: $darkGrayishBlue;
 }
 
 a {
@@ -67,23 +67,23 @@ a {
 
 .btn {
   display: inline-block;
-  background-color: var($brightRed);
+  background-color: $brightRed;
   font-size: 13px;
-  color: var($verylightgray);
+  color: $verylightgray;
   padding: 15px 30px;
   border-radius: 50px;
   cursor: pointer;
   font-weight: 500;
 
   &:hover {
-    background-color: var($brightRedHover);
-    color: var($verylightgray);
+    background-color: $brightRedHover;
+    color: $verylightgray;
   }
 
   &--alt {
     @extend .btn;
-    background-color: var($verylightgray);
-    color: var($brightRed);
+    background-color: $verylightgray;
+    color: $brightRed;
   }
 }
 
@@ -132,7 +132,7 @@ a {
     display: inline-block;
     margin: 0px 15px;
     font-size: 13px;
-    color: var($darkBlue);
+    color: $darkBlue;
     font-weight: 500;
   }
 
@@ -209,10 +209,10 @@ a {
   align-items: baseline;
 
   &__order {
-    background-color: var($brightRed);
+    background-color: $brightRed;
     padding: 10px 25px;
     border-radius: 50px;
-    color: var($verylightgray);
+    color: $verylightgray;
     font-weight: 500;
     margin-right: 25px;
   }
@@ -307,7 +307,7 @@ a {
   }
 
   &__title {
-    color: var($verylightgray);
+    color: $verylightgray;
     max-width: 350px;
   }
 }
@@ -358,11 +358,11 @@ a {
   .social {
     cursor: pointer;
     display: inline-block;
-    color: var($verylightgray);
+    color: $verylightgray;
     font-size: 22px;
 
     &:hover {
-      color: var($brightRed);
+      color: $brightRed;
     }
   }
 
@@ -375,10 +375,10 @@ a {
   }
 
   &__link {
-    color: var(darkGrayishBlue);
+    color: $darkGrayishBlue;
 
     &:hover {
-      color: var($brightRed);
+      color: $brightRed;
     }
   }
 
