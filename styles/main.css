@@ -188,8 +188,8 @@ a {
 
 .sections-combined {
   background-image: url("/images/section-bg.svg");
-  background-size: cover;
-  background-position: -175px 150px;
+  background-size: contain;
+  background-position: -50px 250px;
   background-repeat: no-repeat;
 }
 
