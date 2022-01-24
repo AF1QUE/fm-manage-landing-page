@@ -29,6 +29,10 @@ $verylightgray: #fafafa;
 body {
   font-size: 16px;
   font-family: "Be Vietnam Pro", sans-serif;
+  background-image: url("/images/section-bg-v2.svg");
+  background-position: 0px 65%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -167,13 +171,6 @@ a {
 }
 
 /* Sections Combined */
-
-.sections-combined {
-  background-image: url("/images/section-bg.svg");
-  background-size: contain;
-  background-position: -50px 250px;
-  background-repeat: no-repeat;
-}
 
 /* Info Styles */
 
