@@ -200,8 +200,19 @@ a {
 
 .service {
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
   align-items: baseline;
+
+  &__content {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .layout-stretch {
+    display: flex;
+    align-items: baseline;
+  }
 
   &__order {
     background-color: $brightRed;
@@ -214,7 +225,7 @@ a {
 
   &__desc {
     max-width: 450px;
-    margin: 30px 0px 60px 0px;
+    margin: 30px 0px 60px 96.438px;
   }
 }
 
